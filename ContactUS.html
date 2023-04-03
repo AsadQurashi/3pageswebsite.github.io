@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Boostrap--Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+
+    <!-- Script--Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<style>
+    body {
+        background-color: #0B2447;
+    }
+
+    /* Marquee */
+    .marquee {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .marq {
+        font-size: 30px;
+        text-decoration: solid;
+        background-color: #ECF9FF;
+        color: black;
+    }
+
+    /* Span DR */
+    #DR {
+        color: #FC2947;
+    }
+
+    /* Request */
+    .request {
+        color: #ECF2FF;
+        margin-top: 15px;
+        text-align: center;
+        font-family: montserrat;
+        font-weight: bolder;
+        font-size: 2.5rem;
+        text-decoration: underline;
+    }
+
+    #Cars {
+        height: 1000px;
+        background-color: #ccc;
+        position: relative;
+        margin: 100px 0 100px 0;
+        text-align: center;
+        padding: 50px;
+    }
+
+    #car {
+        position: relative;
+        padding: auto;
+
+    }
+
+    .car-image {
+        padding: 3%;
+    }
+
+    /* Div Form */
+    .Form {
+        padding-top: 2%;
+        padding-left: 40%;
+        padding-bottom: 3%;
+        margin-top: 20px;
+    }
+
+    /* ID Input */
+    #Input {
+        text-align: center;
+        padding: 10px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: black;
+        background-color: #ECF2FF;
+    }
+
+    #radio {
+        text-align: center;
+        width: 200px;
+        height: 25px;
+        border: 2px solid black;
+        background-color: #ECF2FF;
+        border-radius: 5px;
+    }
+
+    /* asking-accident */
+    .asking-accident {
+        color: #ECF2FF;
+    }
+
+    /* Id T-Area */
+    #T-Area {
+        display: flexbox;
+        padding-left: 30%;
+
+    }
+
+    /* Class T-Area */
+    .T-Area {
+        float: left;
+        width: 200%;
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+
+    /* Submit-Button */
+    .Submit-Button {
+        padding-left: 40%;
+        padding-bottom: 3%;
+    }
+
+    /* First-Page */
+    .first-page {
+        padding: 2% 40%;
+    }
+
+    .F-Text {
+        padding-left: 7%;
+        color: white;
+    }
+</style>
+
+<body>
+    <!-- Marquee -->
+    <div class="marquee">
+        <marquee class="marq" behavior="scroll" direction="right" scrollamount="10">
+            <em> <strong><span id="DR">D R</span>
+                    M O T O R S</a>
+                    <span></strong></em>
+        </marquee>
+    </div>
+    <div class="request">
+        <h2>In order to repair your car please contact us</h2>
+    </div>
+
+    <!-- Car Pictuer -->
+    <div id="Cars">
+        <div id="car" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h2 class="car-head">The best road trip includes everything crazy that happens along the journey,
+                        not getting to your
+                        goal
+                    </h2>
+                    <img class="car-image"
+                        src="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\Engine Picture.html\cool-car-wallpapers-hd_Audi.webp"
+                        alt="Audi">
+                </div>
+                <div class="carousel-item">
+                    <img class="car-image"
+                        src="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\Engine Picture.html\Mustang.jpg"
+                        alt="Mustang">
+                </div>
+
+            </div>
+            <!-- Previous Button -->
+            <div>
+                <a class="carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <!-- Next Button -->
+                <a class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="Div-Form">
+        <form class="Input" action="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\Congratulation.html"
+            method="post">
+            <div class="Form">
+                <label for=""><input id="Input" type="text" placeholder="Car Owner Name"></label> <br> <br>
+                <label for=""><input id="Input" type="number" name="" placeholder="Contact Number" id=""></label> <br>
+                <br>
+                <label for=""><input id="Input" type="text" placeholder="Car Name"></label> <br> <br>
+                <label for=""><input id="Input" type="number" name="" placeholder="Car-Model" id=""></label> <br> <br>
+                <label for=""><input id="Input" type="number" name="" placeholder="Car-Number" id=""></label> <br> <br>
+                <label for=""><input id="Input" type="date" name="" id=""></label><br> <br>
+                <label for="">
+                    <h2 class="asking-accident">Did your car been in an accident</h2>
+                </label> <br>
+                <label class="asking-accident" for="">Yes</label>
+                <label for=""><input id="radio" type="radio" name="accident" id="accident"></label> <br>
+                <label class="asking-accident" for="">NO</label>
+                <label for=""><input id="radio" type="radio" name="accident" id="accident"></label><br> <br>
+            </div>
+            <div id="T-Area">
+                <label for=""><textarea class="T-Area" placeholder="Write Your car Problem" name="" id="" cols="30"
+                        rows="10"></textarea></label><br> <br>
+            </div>
+            <div class="Submit-Button">
+                <label for=""><input id="Input" type="submit" value="Submit" name=""></label>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Back -->
+    <div class="first-page">
+        <form action="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\index.html" method="post">
+            <label class="F-Text" for="">Go back to first page</label><br><br>
+            <label for=""><input id="Input" type="submit" value="Back"></label>
+        </form>
+    </div>
+</body>
+
+</html>

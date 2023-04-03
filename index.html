@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Caring</title>
+
+    <!-- Boostrap--Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+
+    <!-- Script--Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/43cd58f0e7.js" crossorigin="anonymous"></script>
+
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+        background-color: gray;
+    }
+
+    /* Navigation Bar Css */
+
+    .navigation {
+        margin-top: 1%;
+    }
+
+    /* Navigation Bar Color */
+    .navbar {
+        padding: 5px 10.5rem 0 10.5rem;
+        background-color: #000000;
+
+    }
+
+    /*Barnd / Title */
+    .navbar-brand {
+        font-family: 'Open Sans', sans-serif;
+        /* padding: 20px; */
+        font-size: 1.7rem;
+        font-weight: bolder;
+        color: #ECF2FF;
+    }
+
+    /* RS */
+    #RS {
+        color: #ECF2FF;
+    }
+
+    /* Navigation Link */
+    .nav-link {
+        color: #ECF2FF;
+    }
+
+    /* Link Hover */
+    .nav-link:hover {
+        background-color: #BAD7E9;
+        color: black;
+    }
+
+    /* Navbar-Brand Hover */
+    .navbar-brand:hover {
+        background-color: #BAD7E9;
+        color: black;
+    }
+
+    /* Toggle Button */
+    .navbar-toggler {
+        background-color: #ECF2FF;
+    }
+
+    /* Span DR */
+    #DR {
+        color: #FC2947;
+    }
+
+    /*Div Engine Pic */
+    .Eng-Pic {
+        background: linear-gradient(90deg, rgba(33, 32, 44, 1) 7%, rgba(54, 58, 59, 1) 97%);
+        position: relative;
+        margin: 40px 10px 40px 10px;
+    }
+
+    /* Engine Image Link */
+    #eng {
+        border-style: none;
+        border-radius: 4px;
+        padding: 4.5rem;
+        width: 100%;
+    }
+
+    /* Div Quality */
+    #quality {
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        background-color: #F0EEED;
+        padding: 7% 15%;
+    }
+
+    /* Icon */
+    .icon {
+        text-align: center;
+        padding: 4.5%;
+    }
+
+    /* Div Message */
+    .Message {
+        margin: 40px 10px 20px 10px;
+        height: 20rem;
+        color: #ECF2FF;
+        text-align: center;
+        background-color: #2D2727;
+        padding: 5% 5% 5% 5%;
+    }
+
+    /* M_Head */
+    .M_Head {
+        font-size: 2rem;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+
+    /* Car's Logo */
+    .Car_logo {
+        border: 2px solid white;
+        border-color: black;
+        margin: 40px 10px 20px 10px;
+        padding-left: 180px;
+    }
+
+    .BMW {
+        width: 400px;
+        border-radius: 4px;
+        height: 210px;
+        padding: 20px;
+    }
+
+    .logo {
+        border-radius: 4px;
+        padding: 20px;
+    }
+
+    @media (max-width:600px) {
+        .Car_logo {
+            border: 2px solid white;
+            border-color: black;
+            padding: 7% 15%;
+            position: relative;
+
+        }
+
+        .BMW {
+            width: 400px;
+            border-radius: 4px;
+            height: 210px;
+            text-align: center;
+            padding: 4.5%;
+        }
+
+        .logo {
+            border-radius: 4px;
+            text-align: center;
+            padding: 4.5%;
+        }
+
+    }
+
+    /* Table */
+    #Question {
+        margin: 40px 10px 20px 10px;
+        padding: 3% 4% 3% 4%;
+        background-color: #000000;
+    }
+
+    .Qst {
+        color: #ECF2FF;
+        padding: 2% 30% 2% 30%;
+    }
+
+    .table {
+        text-align: left;
+        padding: 15px;
+    }
+
+    /* Row */
+    hr {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #ECF2FF;
+    }
+
+    /* Footer */
+    footer {
+        margin: 40px 10px 20px 10px;
+        height: 300px;
+        background-color: #2C3333;
+        color: #ECF2FF;
+        text-align: center;
+        padding: 7% 15%;
+    }
+
+    .last-p {
+        color: gray;
+    }
+
+    .social-icon {
+        margin: 20px 10px;
+    }
+
+    /* @media(max-width : 600px) {
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    } */
+</style>
+
+<body>
+    <div class="container-fluid navigation">
+        <div class="topnav">
+            <nav class="navbar navbar-expand-lg">
+                <div>
+                    <a class="navbar-brand" href="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\index.html"><span
+                            id="DR">D R</span>
+                        M O T O R S</a>
+                    <span>
+                        <p id="RS">#1 Car Repair Service</p>
+                    </span>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quality">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Question">About US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\ContactUS.html">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Picture Section -->
+    <div class="Eng-Pic">
+        <img id="eng"
+            src="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\Engine Picture.html\3d-illustration-car-engine-lubricant-260nw-1340501801.webp"
+            alt="Engine Picture">
+    </div>
+
+    <!-- Quality -->
+    <section id="quality">
+        <div class="row">
+            <div class="col-lg-4 icon">
+                <i class="fa-sharp fa-solid fa-wrench fa-3x"></i>
+                <h3>Experienced Mechanic</h3>
+            </div>
+            <div class="col-lg-4 icon">
+                <i class="fa-sharp fa-solid fa-star fa-3x"></i>
+                <h3>Quality Service</h3>
+            </div>
+            <div class="col-lg-4 icon">
+                <i class="fa-sharp fa-solid fa-check fa-3x"></i>
+                <h3>Affordable Prices</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Message -->
+    <div class="Message">
+        <h3 class="M_Head">We will Take Care Of Your Car</h3>
+        <p class="slogan">We treat car like family</p>
+        <p class="slogan">Let's take car service serious</p>
+        <p class="slogan">Get the dent fixed</p>
+    </div>
+
+    <!-- Cars Logo -->
+    <div class="Car_logo">
+        <img class="BMW" src="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\Engine Picture.html\BMW.jpg"
+            alt="BMW">
+        <img class="logo" src="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\Engine Picture.html\Audi.png"
+            alt="Audi">
+        <img class="logo" src="E:\Webdevelopment\Web_in_VS\Lab Work\3 Pages Website\Engine Picture.html\Mini.png"
+            alt="Mini">
+    </div>
+    <!-- row -->
+    <hr>
+    <!-- Question -->
+    <div id="Question">
+        <h2 class="Qst">We Provide Services Given Below</h2>
+        <!-- Table 1 -->
+        <div class="row table">
+            <div class="col-lg-6 cell1">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Our Services</h3>
+                    </div>
+                    <div class="card-body">
+                        <li>Mechanics</li>
+                        <li>Car Checks</li>
+                        <li>Oil and Break Checks</li>
+                        <li>Breakdown Services</li>
+                        <li>Tire Change</li>
+                        <li>Battery Change</li>
+                    </div>
+                </div>
+            </div>
+            <!-- Table 2 -->
+            <div class="col-lg-6 col-md-12 cell1">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Opening Hour</h3>
+                    </div>
+                    <div class="card-body">
+                        <li>Mon - Fri: 7am - 10pm</li>
+                        <li>Sun: 7am - 3pm</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- row -->
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+        <p class="last-p">© Copyright DR MOTORS</p>
+    </footer>
+
+
+</body>
+
+</html>
